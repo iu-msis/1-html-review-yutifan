@@ -22,7 +22,7 @@
     <main>
 <h2>Books </h2><br>
 
-<table class="table table-hover">
+<table id="taskTable"  class="table table-hover">
   <thead>
     <tr>
       <th scope="col">Title</th>
@@ -107,6 +107,12 @@
         <p>Ali Cherm | Phone: 268-507-5989 | E-Mail: alicherm@gmail.com | 7993 Gina Court, Bloomington, IN 47405</p>
         <img src="img/kelley_logo.png" alt="kelley_logo" width="100">
     </footer>
+
+    <script src="js/tablesort.min.js"></script>
+    <script>
+      // Table sort plugin from http://tristen.ca/tablesort/demo/
+      new Tablesort(document.getElementById('taskTable'));
+    </script>    
 
 </body>
 </html>
